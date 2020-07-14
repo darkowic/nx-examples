@@ -1,0 +1,17 @@
+diff --git a/node_modules/@nrwl/web/src/builders/build/build.impl.js b/node_modules/@nrwl/web/src/builders/build/build.impl.js
+index fb0f666..0c4280d 100644
+--- a/node_modules/@nrwl/web/src/builders/build/build.impl.js
++++ b/node_modules/@nrwl/web/src/builders/build/build.impl.js
+@@ -42,9 +42,9 @@ function run(options, context) {
+             // ESM build for modern browsers.
+             web_config_1.getWebConfig(context.workspaceRoot, sourceRoot, options, context.logger, true, isScriptOptimizeOn),
+             // ES5 build for legacy browsers.
+-            isScriptOptimizeOn
+-                ? web_config_1.getWebConfig(context.workspaceRoot, sourceRoot, options, context.logger, false, isScriptOptimizeOn)
+-                : undefined,
++            // isScriptOptimizeOn
++            //     ? web_config_1.getWebConfig(context.workspaceRoot, sourceRoot, options, context.logger, false, isScriptOptimizeOn)
++            //     : undefined,
+         ]
+             .filter(Boolean)
+             .map((config) => options.webpackConfig

@@ -71,6 +71,13 @@
     },
     "shared-styles": {
       "tags": ["scope:shared", "type:styles"]
+    },
+    "react-example": {
+      "tags": []
+    },
+    "react-example-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-example"]
     }
   }
 }
